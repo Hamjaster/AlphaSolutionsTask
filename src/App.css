@@ -1,0 +1,27 @@
+@keyframes zoomInOut {
+    0% {
+      transform: scale(1); /* Initial scale */
+    }
+    50% {
+      transform: scale(1.1); /* Zoom in to this scale */
+    }
+    100% {
+      transform: scale(1); /* Zoom back out to the original scale */
+    }
+  }
+  
+  .animate-zoomInOut {
+    animation: zoomInOut 20s infinite ease-in-out;
+  }
+
+  .animate-smoothBounce {
+    animation: bounce 1.6s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
